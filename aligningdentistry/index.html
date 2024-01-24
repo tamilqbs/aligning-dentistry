@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Aligning Dentistry</title>
+
+    <style>
+        /*sidebar call and appoinment */
+        .side_details {
+            transition: all ease 1s;
+            position: fixed;
+            top: 40%;
+            right: -190px;
+            z-index: 99999;
+            overflow: hidden;
+            width: 230px;
+            height: 120px;
+        }
+
+        .side_details a {
+            text-decoration: none;
+        }
+
+        .side_details:hover {
+            right: 0px;
+        }
+
+        .side_details .side_icon {
+            height: 39px;
+            padding: 10px 13px;
+            background-color: #fff;
+        }
+
+        .side_details .side_text {
+            width: 100%;
+            height: 39px;
+            padding: 8px 10px;
+            background-color: #fff;
+        }
+
+        .side_text:hover {
+            color: #fff;
+        }
+
+        /*sidebar call and appoinment End */
+
+
+        /*Navbar review style */
+
+        .cilents {
+            background-color: #187dc3;
+            border-radius: 20px;
+            position: absolute;
+            bottom: -30px;
+            right: 90px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .cilents p {
+            color: #fff;
+        }
+
+        /*Navbar review style end */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light ps-5 pr-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-right text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <small class="py-2 text-truncate"><i class="far fa-clock text-secondary mr-2"></i>Opening Hours: Mon
+                        - Sat : 10.00
+                        am - 12.30 pm, 6.00 pm - 9.00 pm <b>Sunday Appoinment Only</b> </small>
+                </div>
+            </div>
+            <div class="col-md-6 text-right text-lg-end">
+                <div class="mail-call position-relative d-inline-flex align-items-center text-white top-shape px-5">
+                    <div class="mr-3 pe-3 border-end py-2 mr-2">
+                        <p class="m-0"><i class="fa fa-envelope-open mr-2"></i>aligningdentistry@gmail.com</p>
+                    </div>
+                    <div class="py-2 mr-2">
+                        <p class="m-0"><i class="fa-solid fa-phone fa-shake mr-2" style="color:#fff;"></i>+91 9150042699
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+
+
+    <div class="side_details">
+        <div class="d-flex align-items-center justify-content-between">
+            <p class="side_icon"><i class="fa-solid fa-calendar-check" style="color: #010409;"></i></p>
+            <p class="side_text text-left"><a href="#">Book Appoinment</a></p>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+            <p class="side_icon"><i class="fa-solid fa-phone" style="color: #03060c;"></i></p>
+            <p class="side_text text-left"><a href="tel:+919150042699">+91 9150042699</a></p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light bg-light shadow-sm px-5  py-lg-0 sticky-top">
+        <div class="brand mr-5">
+            <a href="#" class="navbar-brand p-0 mt-1">
+                <img src="images/logo/logo.png" alt="logo" height="30px" width="50px">
+                <div class="px-auto">
+                    <p class="logo_name"><span class="text-white">....</span>Aligning Dentistry</span><br> <span
+                            class="logo-subtitle"> PREMIUM DENTAL CARE
+                        </span></p>
+                </div>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Cosmetic Treatment
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Invisalign</a>
+                        <a class="dropdown-item" href="#">Braces</a>
+                        <a class="dropdown-item" href="#">Smile Makeover</a>
+                        <a class="dropdown-item" href="#">Teeth Whitening</a>
+                        <a class="dropdown-item" href="#">Dentures</a>
+                        <a class="dropdown-item" href="#">Gum Surgeries</a>
+                        <a class="dropdown-item" href="#">Cosmetic Jaw Surgeries</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dental Treatment
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Root canal</a>
+                        <a class="dropdown-item" href="#">Implants</a>
+                        <a class="dropdown-item" href="#">Crown & Bridges</a>
+                        <a class="dropdown-item" href="#">Teeth Extractions</a>
+                        <a class="dropdown-item" href="#">Snoring Appliances</a>
+                        <a class="dropdown-item" href="#">Laser Dentistry</a>
+                        <a class="dropdown-item" href="#">Kids Surgeries</a>
+                        <a class="dropdown-item" href="#">Full Mouth Rehabilitation</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div>
+                <li href="#" class="btn py-2 px-4 ms-3">Appointment</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel Start -->
+    <div id="home_carousel" class="carousel slide mb-2" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel_img">
+                    <img src="images/slider/dentalcare.jpg" class="object-cover" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <div>
+                        <h2 class="h1">Aligning Dentistry : Your Smile's Best Choice</h2>
+                        <h5 class="text-justify">We strive to be considerate
+                            of your feelings and
+                            aim to provide comfort</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div class="carousel_img">
+                    <img src="images/slider/invisalign-show-lady.jpg" class="object-cover" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <div>
+                        <h2 class="h1">The Clear Alternative to Traditional Braces
+                        </h2>
+                        <h5 class="text-justify">Discreet and comfortable, the freedom to straighten your smile without
+                            metal constraints
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+
+                <div class="carousel_img">
+                    <img src="images/slider/doctor-holding-brush.jpg" class="object-cover" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <div>
+                        <h2 class="h1">Smile with Confidence... Shine with Health..
+                        </h2>
+                        <h5 class="text-justify">Smile Bright, Live Light : Your Journey.. Towards Healthy, Happy Teeth
+                            Starts
+                            Here
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+
+                <div class="carousel_img">
+                    <img src="images/slider/slider4.png" class="object-cover" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <div>
+                        <h2 class="h1">Your Smile, Our Passion.</h2>
+                        <h5 class="text-justify">We promise
+                            to offer compassionate and heartfelt treatment
+                            that resonates with you emotionally</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-target="#home_carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-target="#home_carousel" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+    <!-- Carousel End -->
+
+    <div class="banner-content-area">
+        <div class="container">
+            <div class="inner-counter-bg">
+                <div class="row  border-light">
+                    <div class="col-lg-3">
+                        <div class="row pt-2 py-3 align-items-center">
+                            <div class="col-6">
+                                <p class="h1 mb-0 mr-3 py-2 text-right">10K</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="font-weight-normal text-gray text-left">
+                                    <p>HAPPY</p>
+                                    <p>PATIENTS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="row pt-2 py-3 align-items-center">
+                            <div class="col-6">
+                                <p class="h1 mb-0 mr-3 py-2 text-right">500+</p>
+                            </div>
+                            <div class="col-6 pr-lg-0">
+                                <div class="font-weight-normal text-gray text-left">
+                                    <p>SUCCESSFUL</p>
+                                    <P>ORTHO CASES</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="row pt-2 py-3 align-items-center">
+                            <div class="col-6">
+                                <p class="h1 mb-0 mr-3 py-2 text-right">2K+</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="font-weight-normal text-gray text-left">
+                                    <p>IMPLANTS</p>
+                                    <p>PLACED</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="row pt-2 py-3 align-items-center">
+                            <div class="col-6">
+                                <p class="h1 mb-0 mr-3 py-2 text-right">800+</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="font-weight-normal text-gray text-left">
+                                    <p>Teeth</p>
+                                    <P>Extractions</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col">
+                        <div class="d-flex justify-content-center align-items-center py-3">
+                            <p class="h1 mb-0 mr-3 py-2">4.9/5 </p>
+                            <div class="font-weight-normal text-gray">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #ffd43b;"></i>
+                                </div>
+                                <p>RATED ON GOOGLE</p>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7 ">
+                    <div class="section-title">
+                        <h5 class="position-relative d-inline-block text-uppercase mt-5">About Us</h5>
+                        <h1 class="display-5 mb-0" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                            The World's Best Dental Clinic That You Can Trust</h1>
+                    </div>
+                    <h4 class="text-body fst-italic">Radiant Smiles & Trusted Care For Dental Excellence & Comfort
+                        : Lasting Oral Health Begins Here</h4>
+                    <p>Discover unparalleled care at our world-renowned dental clinic. We are dedicated to
+                        providing the highest quality service, ensuring your trust and comfort. Your smile is our
+                        priority, and our team of experts is committed to delivering excellence in dental care. Trust in
+                        us for a healthy, radiant smile that lasts a lifetime.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <h5 class="mb-3 mt-3"><i class="fa fa-check-circle mr-3"
+                                    style="color: #3a3792;"></i>State-of-art Dentistry</h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle mr-3" style="color: #3a3792;"></i>Professional
+                                Staff</h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="mb-3 mt-lg-3 "><i class="fa fa-check-circle mr-3"
+                                    style="color: #3a3792;"></i>24×7 Support
+                            </h5>
+                            <h5 class="mb-3"><i class="fa fa-check-circle mr-3" style="color: #3a3792;"></i>Fair Prices
+                            </h5>
+                        </div>
+                    </div>
+                    <!-- <a href="#" class="btn py-3 px-5 mt-4">
+                        Appointment</a> -->
+                </div>
+                <div class="col-lg-5 mt-3 d-none d-md-block" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 rounded" src="images/doctors/office.png"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+
+
+    <!-- Team Start -->
+    <section class="container-fluid py-5 mt-3 mt-md-0">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 mb-0">
+                    <div class="section-title bg-light rounded h-100">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
+                        <h2 class="display-6 mb-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                            Meet our <br> Expert<br> Dental<br> Specialists</h2>
+                        <a href="#" class="btn py-3 text-white px-5 mb-0">Know More <i
+                                class="fa-solid fa-angles-right fa-beat-fade mr-2" style="color: #ffffff;"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-0 mt-3 mt-md-0">
+                    <div class="team-item border pt-3 ">
+                        <div class="doctors_image position-relative rounded-top mb-0 px-3" style="z-index: 1;">
+                            <img class="object-cover rounded-top" src="images/doctors/subash.png" alt="">
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-2">
+                            <h5 class="mb-2">Dr.N.Subash Chandar,M.D.S</h5>
+                            <p class="logo-subtitle mb-0">Orthodontics,PGIMER,Chandigarh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-0 mt-3 mt-md-0">
+                    <div class="team-item border pt-3">
+                        <div class="doctors_image position-relative rounded-top mb-0 px-3" style="z-index: 1;">
+                            <img class="object-cover rounded-top" src="images/doctors/seetha.png" alt="">
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-2">
+                            <h5 class="mb-2">Dr.K.V.Seetha Lakshmi,M.D.S</h5>
+                            <p class="logo-subtitle mb-0">Prosthodontics & Maxillo-facial Prostheses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team End -->
+
+
+    <!-- Appointment Start -->
+    <section class="container-fluid  bg-appointment mt-3 mt-md-0">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <div>
+                        <h2 class="mb-4" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">We Are A
+                            Certified Dental Clinic You Can
+                            Trust</h2>
+                        <p class=" mb-3">Creating beautiful, enduring smiles on our patients' faces is our driving
+                            force. Situated in Chennai's bustling center, we address a wide spectrum of dental
+                            requirements, spanning from routine care to intricate dental restorations. Our facility
+                            boasts cutting-edge technology and modern infrastructure.</p>
+
+                        <p class=" mb-0">Supported by a proficient team of
+                            experienced dentists and support staff, we deliver radiant, healthy smiles through
+                            personalized treatment strategies crafted to suit each patient's unique needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-3 mt-md-0">
+                    <div class="appointment-form  text-center p-5">
+                        <h3 class="text-white mb-4">FOR APPOINMENT</h3>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-control bg-light mb-3 p-3 border-0"
+                                        style="height: 55px; border-radius: 5px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Braces</option>
+                                        <option value="2">Invisalign</option>
+                                        <option value="3">Dentures</option>
+                                        <option value="4">Implants</option>
+                                        <option value="5">Root Canal</option>
+                                        <option value="6">Crowns & Bridges</option>
+                                        <option value="7">Gum Surgeries</option>
+                                        <option value="9">Laser Dentistry</option>
+                                        <option value="9">Teeth Extractions</option>
+                                        <option value="10">Full Mouth Rehabilitation</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-control bg-light p-3 mb-3 border-0"
+                                        style="height: 55px;border-radius: 5px;">
+                                        <option selected>Select Doctor</option>
+                                        <option value="1">Dr.N.Subash Chandar,M.D.S</option>
+                                        <option value="2">Dr.K.V.Seetha Lakshmi,M.D.S</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control bg-light mb-3 border-0"
+                                        placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control bg-light mb-3 border-0"
+                                        placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <!-- <div class="col-12 col-sm-6">
+                                    <input type="date" id="dateInput" name="dateInput"
+                                        class="form-control bg-light mb-3 border-0"
+                                        style="height: 55px;">
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <input type="time" id="timeInput" name="timeInput" min="09:00" max="18:00"
+                                        class="form-control bg-light mb-3 border-0 "
+                                        style="height: 55px;">
+                                </div> -->
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="position-relative">
+                                        <input type="date" id="dateTimeInput" name="dateTimeInput"
+                                            class="form-control bg-light mb-3 border-0" style="height: 55px;" required>
+                                        <div class="placeholder-text">Select Date</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="position-relative">
+                                        <input type="time" id="dateTimeInput" name="dateTimeInput"
+                                            class="form-control bg-light mb-3 border-0" style="height: 55px;" required>
+                                        <div class="placeholder-text">Select Time</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button class="btn  w-100 mt-5 py-3" type="submit">
+                                        Appointment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment End -->
+
+
+
+    <!-- Service Start -->
+    <section class="container-fluid d-none d-lg-block py-5 mt-5">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-5 py-3" style="min-height: 400px;">
+                    <div class="img-comp-container mb-3">
+                        <div class="img-comp-img">
+                            <img src="images/teeth/before.png" width="100%" height="200">
+                        </div>
+                        <div class="img-comp-img img-comp-overlay">
+                            <img src="images/teeth/after.png" width="100%" height="200">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 mt-5">
+                    <div class="section-title mb-5">
+                        <h5 class="position-relative d-inline-block text-uppercase">Our Services</h5>
+                        <h2 class="display-5 mb-0" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                            We Offer The Best Quality Dental Services</h2>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-md-6 service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="object-cover" src="images/services/braceservice.png" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">Braces</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="object-cover" src="images/services/invisalign1.png" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">Invisalign</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="row g-5">
+                        <div class="col-md-6 service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="object-cover" src="images/services/dentures_service.jpg" alt="">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0">Dentures</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 service-item">
+                            <div class="rounded-top overflow-hidden">
+                                <img class="object-cover" src="images/services/implants.png" alt=" ">
+                            </div>
+                            <div class="position-relative bg-light rounded-bottom text-center p-4">
+                                <h5 class="m-0"> Dental Implants</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 service-item">
+                    <div
+                        class="position-relative rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
+                        <h3 class=" mb-3" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">For More
+                            Services</h3>
+                        <p class=" mb-3">Explore our dental services for a healthier, happier smile. Experience
+                            personalized care for a healthier, happier smile.</p>
+                        <a class="btn text-white mr-3">More <i class="fa-solid fa-angles-right fa-beat-fade mr-2"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+
+    <!-- Offer Start -->
+    <!-- <div class="container-fluid bg-offer my-5 py-5>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="offer-text text-center rounded p-5">
+                        <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>
+                        <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore
+                            et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod diam
+                            duo lorem magna sit dolore sed et.</p>
+                        <a href="appointment.html" class="btn  py-3 px-5 me-3">Appointment</a>
+                        <a href="" class="btn py-3 px-5">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Offer End -->
+
+
+    <!-- Pricing Start -->
+    <!-- <section class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class=" col-lg-5">
+                    <div class="section-title mb-4">
+                        <h5 class="position-relative d-inline-block text-uppercase">Budget-Friendly</h5>
+                        <h1 class="display-5 mb-0" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                            We Offer Fair Prices for Dental Treatment</h1>
+                    </div>
+                    <p class="mb-4">At our clinic, We prioritize affordability, offering fair prices forall range of
+                        dental treatments. Whether you're considering Invisalign, braces, root canal services, implants,
+                        or dentures, our commitment to fair pricing ensures accessible and high-quality care. Experience
+                        the benefits of our cost-effective solutions without compromising on excellence. Your journey to
+                        a healthier and more confident smile starts here</p>
+                    <h5 class="text-muted text-uppercase">Call for Appointment</h5>
+                    <h3>+91 9150042699</h3>
+                </div>
+                <div class="col-lg-7">
+                    <div class="price-carousel" id="price-slick">
+                        <div class="price-item pb-4">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-top" src="images/price/invisimage.png" alt="">
+                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                    style="z-index: 2;">
+                                   
+                                </div>
+                            </div>
+                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                <h4>Invisalign</h4>
+                                <hr class="text-primary w-50 mx-auto mt-0">
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="#"
+                                    class="btn  py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                            </div>
+                        </div>
+                        <div class="price-item pb-4">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-top" src="images/price/braceimg.png" alt="">
+                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                    style="z-index: 2;">
+
+                                </div>
+                            </div>
+                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                <h4>Brace</h4>
+                                <hr class="text-primary w-50 mx-auto mt-0">
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="#"
+                                    class="btn py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                            </div>
+                        </div>
+                        <div class="price-item pb-4">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-top" src="images/price/implantsimg.png" alt="">
+                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                    style="z-index: 2;">
+                                
+                                </div>
+                            </div>
+                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                <h4>Implants</h4>
+                                <hr class="text-primary w-50 mx-auto mt-0">
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="#"
+                                    class="btn py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                            </div>
+                        </div>
+                        <div class="price-item pb-4">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-top" src="images/price/rootcanel.png" alt="">
+                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                    style="z-index: 2;">
+                              
+                                </div>
+                            </div>
+                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                <h4>Root Canel</h4>
+                                <hr class="text-primary w-50 mx-auto mt-0">
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="#"
+                                    class="btn py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                            </div>
+                        </div>
+                        <div class="price-item pb-4">
+                            <div class="position-relative">
+                                <img class="img-fluid rounded-top" src="images/price/dentureimg.png" alt="">
+                                <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
+                                    style="z-index: 2;">
+                                   
+                                </div>
+                            </div>
+                            <div class="position-relative text-center bg-light border-bottom border-primary py-5 p-4">
+                                <h4>Dentures</h4>
+                                <hr class="text-primary w-50 mx-auto mt-0">
+                                <div class="d-flex justify-content-between mb-3"><span>Modern Equipment</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Professional Dentist</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-2"><span>24/7 Call Support</span><i
+                                        class="fa fa-check text-primary pt-1"></i></div>
+                                <a href="#"
+                                    class="btn py-2 px-4 position-absolute top-100 start-50 translate-middle">Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Pricing End -->
+
+
+
+
+    <section class="my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-title mb-4">
+                        <h5 class="position-relative d-inline-block text-uppercase">Contact us</h5>
+                    </div>
+                    <div class="contact-page">
+                        <form action="#" method="POST">
+                            <div class="contactform">
+                                <label for="fullname" class="title mb-2">Full Name</label>
+                                <input type="text" id="name" class="input-box mb-2">
+                            </div>
+                            <div class="contactform">
+                                <label for="email" class="title mb-2">Email Address</label>
+                                <input type="email" id="email" class="input-box mb-2">
+                            </div>
+                            <div class="contactform">
+                                <label for="text" class="title mb-2">Message</label>
+                                <textarea name="message" id="message" class="input-box mb-2" cols="30"
+                                    rows="4"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn px-3 ">Send</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-5 mt-3 mt-md-0">
+                    <div class="contact-page-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0754357745845!2d80.24877105469449!3d13.030868085778264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267004c1c65bd%3A0x68dc70b4efefce83!2sAligning%20Dentistry!5e0!3m2!1sen!2sin!4v1704696752368!5m2!1sen!2sin"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- footer-->
+
+
+
+    <footer id="Footer" style="background-color:#a2cbe7;" class="page-footer font-small stylish-color-dark pt-4">
+        <div style="background-color:#a2cbe7;" class="container">
+            <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold mt-3 mb-4">About Aligning Dentistry</h5>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p class="text-justify">Aligning dentistry with optimal dental care, our focus is on personalized
+                        treatments to enhance oral health and smiles.</p>
+
+                    <div class="hover-effect1">
+                        <ul class="list-unstyled list-inline text-justify">
+                            <li class="list-inline-item">
+                                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"
+                                        style="color: #020203;"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"
+                                        style="color: #00040a;"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Whatsapp"><i class="fa-brands fa-whatsapp"
+                                        style="color: #010409;"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"
+                                        style="color: #010409;"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Youtube"><i class="fa-brands fa-youtube"
+                                        style="color: #00040a;"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div id="link10" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Our Services</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p>
+                        <a href="#" class="footer-link">Invisalign</a>
+                    </p>
+                    <p>
+                        <a href="#" class="footer-link">Braces</a>
+                    </p>
+                    <p>
+                        <a href="#" class="footer-link">Root Canal</a>
+                    </p>
+                    <p>
+                        <a href="#" class="footer-link">Crowns & Bridges</a>
+                    </p>
+                    <p>
+                        <a href="#" class="footer-link">Implants</a>
+                    </p>
+                    <p>
+                        <a href="#" class="footer-link">Dentures</a>
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div id="link10" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Opening Hours</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px;">
+                    <p>
+                        Monday - Saturday 10.00 AM - 12.30 PM
+                    </p>
+                    <p>
+                        Monday - Saturday 6.00 PM - 9.00 PM
+                    </p>
+                    <p>
+                        <b>Sunday Appoinment Only</b>
+                    </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> 550/136, Hallmark Towers, 1st Floor, Above Wangs Kitchen, TT
+                        Krishnamachari Rd, Cooperative Colony, Sri Ram Nagar South Street, Alwarpet, Chennai, Tamil
+                        Nadu-600018
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> aligningdentistry@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +91 9150042699
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Call to action -->
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div style="background-color:#fff;" class="footer-copyright text-center py-3 mb-0">
+            <p>Copyright © 2023 All Rights Reserved by Aligning Dentistry Designed with <span
+                    class="text-danger">❤</span> by
+                <a href="https://qbrainstorm.com/" target="_blank">Q Brainstorm Software
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+    <script>
+        AOS.init();
+
+        $('.experience_parallex').parallax({ imageSrc: 'images/experience_bg1.jpg' });
+    </script>
+    <!-- Appoinment time  -->
+    <script>
+        document.getElementById('dateTimeInput').addEventListener('change', function () {
+            var placeholderText = document.querySelector('.placeholder-text');
+            if (this.value !== '') {
+                placeholderText.style.display = 'none';
+            } else {
+                placeholderText.style.display = 'block';
+            }
+        });
+    </script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#price-slick').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                speed: 1000,
+                responsive: [
+                    {
+                        breakpoint: 768, // Adjust this breakpoint as needed
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 576, // Adjust this breakpoint as needed
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // Add more breakpoints and settings as needed
+                ]
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>
